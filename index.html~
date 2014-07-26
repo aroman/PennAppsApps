@@ -73,7 +73,6 @@ img {
 <img src="itshappening.gif">
 <section class="rain"></section>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 // number of drops created.
 var nbDrop = 50; 
