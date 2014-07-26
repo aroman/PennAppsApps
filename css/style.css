@@ -1,0 +1,24 @@
+.well-spin {
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+    -webkit-animation:spin 18s linear infinite;
+    -moz-animation:spin 18s linear infinite;
+    animation:spin 18s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg) scale(1.4); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg) scale(1.4); } }
+@keyframes spin {
+ 100% { 
+  -webkit-transform: rotate(360deg); 
+  transform:rotate(360deg) scale(1.4);
+ } 
+}
+
+.hidden {display: none;}
+
+#rejected {
+    color: #d9534f;
+    font-size: 2em;
+    font-weight: bolder;
+}
