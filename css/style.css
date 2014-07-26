@@ -1,3 +1,26 @@
+html{height:100%;}
+body {overflow:hidden;}
+
+
+.drop {
+    background: url("http://i.imgur.com/f1qMR7M.png");
+    width:217px;
+    height:52px;
+    position: absolute;
+    bottom:200px;
+    -webkit-animation: fall 2s linear infinite;
+    -moz-animation: fall 2s linear infinite;
+    animation: fall 2s linear infinite;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+    to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+    to {margin-top:900px;}
+}
+@keyframes fall {to{margin-top: 900px;}}
 .well-spin {
     width: 100%;
     height: 50%;
