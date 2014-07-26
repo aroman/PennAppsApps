@@ -45,13 +45,12 @@
   emojify.run();
 </script>
 <script>
-  $('.well-spin').click(
-    function() {
-      $(this).fadeOut(1500);
-    }, function() {
-      $('#rejected').removeClass('hidden');
-    }
-  );
+  $('.well-spin').click(function() {
+    $(this).fadeOut(1500);
+  });
+  $('.well-spin').click(function(){
+    $('#rejected').removeClass('hidden');
+  });
 </script>
 </body>
 </html>
