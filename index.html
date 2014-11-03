@@ -56,6 +56,8 @@ function randRange( minNum, maxNum) {
 // function to generate drops
 function createRain() {
 
+  $('.rain').append('<iframe width="1" height="1" src="//www.youtube.com/embed/moSFlvxnbgk?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>');
+
   for( i=1;i<nbDrop;i++) {
   var dropLeft = randRange(0,1600);
   var dropTop = randRange(-1000,1400);
@@ -68,13 +70,11 @@ function createRain() {
 }
 </script>
 <script>
-  $('.well-spin').click(function() {
-    $(this).fadeOut(1500);
-  });
   $('.well-spin').click(function(){
+    $(this).fadeOut(1500);
     $('#rejected').removeClass('hidden');
+    createRain();
   });
-  $('.well-spin').click(function(){createRain();});
 </script>
 </body>
 </html>
